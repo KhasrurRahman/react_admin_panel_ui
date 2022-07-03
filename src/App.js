@@ -1,6 +1,7 @@
-import Sidebar from "./components/topbar/sidebar/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import "./app.css";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <div className="others">Other page</div>
+        <Dashboard/>
       </div>
     </div>
   );

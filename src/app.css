@@ -3,6 +3,6 @@
 }
 
 .others{
-    flex: 4;
-    background-color: red;
+    flex: 6;
+    background-color: rgb(214, 201, 201);
 }
