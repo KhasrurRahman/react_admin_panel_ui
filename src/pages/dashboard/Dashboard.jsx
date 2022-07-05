@@ -1,13 +1,16 @@
-import React from 'react'
-import FeaturedInfo from '../../components/featuredInfo/FeaturedInfo'
-import "./dashboard.css"
+import React from "react";
+import Chart from "../../components/chart/Chart";
+import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
+import { userData } from "../../dummyData.js";
+import "./dashboard.css";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-        <FeaturedInfo/>
+      <FeaturedInfo />
+      <Chart data={userData} title="User Analytics" grid dataKey="Active user"/>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
